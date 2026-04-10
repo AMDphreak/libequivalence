@@ -4,12 +4,14 @@ D library: SDL-driven rule loading and application for the link:https://github.c
 
 == Use in DUB
 
+DUB 1.41 and newer require a **commit hash** (not only a semver tag) in the `version` field when using `repository`. Pin the revision you want (for example the commit that `v1.0.0` points to):
+
 [dub.sdl]
 ----
-dependency "libequivalence" repository="git+https://github.com/AMDphreak/libequivalence.git" version="~>1.0.0"
+dependency "libequivalence" version="ecbc77baa6863517b15b2fcd467aa24b2429386a" repository="git+https://github.com/AMDphreak/libequivalence.git"
 ----
 
-Pin to a release tag for reproducible builds, for example `version="1.0.0"`.
+Git tags such as `v1.0.0` / `1.0.0` are still useful for human-readable releases; bump the hash in dependents when you tag a new library version.
 
 == License
 
