@@ -1,0 +1,16 @@
+= libequivalence
+
+D library: SDL-driven rule loading and application for the link:https://github.com/AMDphreak/equivalence-engine[Equivalence Engine].
+
+== Use in DUB
+
+[dub.sdl]
+----
+dependency "libequivalence" repository="git+https://github.com/AMDphreak/libequivalence.git" version="~>1.0.0"
+----
+
+Pin to a release tag for reproducible builds, for example `version="1.0.0"`.
+
+== License
+
+Distributed under the Boost Software License 1.0. See link:LICENSE[LICENSE].
