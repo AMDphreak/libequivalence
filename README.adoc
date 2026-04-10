@@ -1,6 +1,22 @@
 = libequivalence
 
+image:https://github.com/AMDphreak/libequivalence/actions/workflows/ci.yml/badge.svg[Build status,link=https://github.com/AMDphreak/libequivalence/actions/workflows/ci.yml]
+
+After you link:https://code.dlang.org/packages/libequivalence[register the package on code.dlang.org], you can add a registry version badge (for example from link:https://shields.io/badges/dub[Shields.io DUB]) next to the build badge above.
+
 D library: SDL-driven rule loading and application for the link:https://github.com/AMDphreak/equivalence-engine[Equivalence Engine].
+
+== Publish on code.dlang.org
+
+The registry does not receive uploads from your PC. You **register** the Git repo once; **versions** come from **git tags** (`v1.2.3` style).
+
+. Create an account: link:https://code.dlang.org/register[code.dlang.org/register].
+. Log in and **register** the package with your Git host user/org and repo name (`AMDphreak` + `libequivalence` for this project).
+. Ensure `dub.json` has sensible `description`, `license`, `authors`, and `dependencies` (already required for a clean listing).
+. Cut releases with **annotated or lightweight tags** named like `v1.0.1` (semver). The registry polls Git periodically (about every ~30 minutes) and picks up new tags automatically.
+. After the first successful crawl, the package page will be at `https://code.dlang.org/packages/libequivalence` and dependents can use `dependency "libequivalence" version="~>1.0.0"` (registry) instead of a raw `repository` + commit pin—though you may still pin commits for maximum reproducibility.
+
+Official overview: link:https://dub.pm/dub-guide/publishing/[Publishing packages — DUB documentation].
 
 == Use in DUB
 
