@@ -9,9 +9,6 @@ import std.algorithm;
 import std.uni;
 import sdlang;
 
-/**
- * A transformation rule
- */
 struct Rule {
     string type;
     string target;
@@ -19,25 +16,16 @@ struct Rule {
     string message;
 }
 
-/**
- * A finding from the engine
- */
 struct Finding {
     string type;
     string message;
 }
 
-/**
- * The core rule-based transformation engine
- */
 class RuleEngine {
     Rule[] rules;
     Finding[][string] findings;
     string currentRepo;
 
-    /**
-     * Load rules from an SDL file
-     */
     void loadRules(string sdlPath) {
         if (!exists(sdlPath)) {
             throw new Exception("Rules file not found: " ~ sdlPath);
@@ -71,9 +59,6 @@ class RuleEngine {
         }
     }
 
-    /**
-     * Parse rules from an SDL string (useful for embedded/remote rules)
-     */
     void parseRules(string content) {
         try {
             Tag root = parseSource(content);
@@ -103,9 +88,6 @@ class RuleEngine {
         }
     }
 
-    /**
-     * Apply rules to a string
-     */
     string applyRules(string content, string fileName = "default") {
         foreach (rule; rules) {
             if (rule.type == "replace") {
@@ -122,9 +104,6 @@ class RuleEngine {
         return content;
     }
 
-    /**
-     * Clear all current findings
-     */
     void clearFindings() {
         findings = null;
     }

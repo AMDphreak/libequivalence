@@ -1,0 +1,31 @@
+= libequivalence Developer Guide
+:navtitle: D Library Integration
+
+`libequivalence` is the core D programming library that parses SDL-driven adaptation rules and evaluates code-transform pathways. It powers the official CLI compiler, but is also available as a standalone D dependency for custom tool builders.
+
+== Adding libequivalence to Your D Project
+
+DUB 1.41 and newer require a **commit hash** along with your repository definition to guarantee clean reproducible builds:
+
+.Example `dub.sdl` Configuration
+[source,sdl]
+----
+dependency "libequivalence" version="ecbc77baa6863517b15b2fcd467aa24b2429386a" repository="git+https://github.com/AMDphreak/libequivalence.git"
+----
+
+Alternatively, once registered on the global registry, you can pull it as a standard package:
+
+.Example Standard Registry Dependency
+[source,sdl]
+----
+dependency "libequivalence" version="~>1.0.0"
+----
+
+== DUB Registry Registration Protocol
+
+To make the library consumable as a standard dependency without git links:
+
+1. **Create Registry Account:** Register an account at link:https://code.dlang.org/register[code.dlang.org].
+2. **Register Repository:** Submit the project under your user account (`AMDphreak/libequivalence`).
+3. **Release Tags:** DUB aggregates package versions directly from Git release tags (like `v1.0.0` or `v1.2.3`). When you tag a release, the registry automatically picks it up within 30 minutes.
+4. **Publishing Guidelines:** For detailed publication policies, consult the link:https://dub.pm/dub-guide/publishing/[DUB Publishing Manual].

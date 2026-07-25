@@ -1,10 +1,10 @@
 {
-	"name": "libequivalence",
-	"description": "Core rule-based transformation engine for the Equivalence project.",
-	"authors": ["amdphreak"],
-	"license": "BSL-1.0",
-	"targetType": "library",
-	"dependencies": {
-		"sdlang-d": "~>0.10.6"
-	}
+    "name": "libequivalence",
+    "description": "SDL-driven rule loading and CLI install resolution for the Equivalence Engine (dev-centr).",
+    "authors": ["dev-centr"],
+    "copyright": "Copyright © 2026, dev-centr",
+    "license": "BSL-1.0",
+    "dependencies": {
+        "sdlang-d": "~>0.10.6"
+    }
 }

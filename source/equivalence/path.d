@@ -26,7 +26,6 @@ string[] findMigrationPath(string rulesDir, string fromVer, string toVer) {
             if (parts.length == 2) {
                 graph[parts[0]] ~= Edge(parts[1], entry.name.idup);
                 
-                // Peek for aliases
                 try {
                     Tag root = parseFile(entry.name);
                     foreach (tag; root.tags) {
@@ -47,7 +46,6 @@ string[] findMigrationPath(string rulesDir, string fromVer, string toVer) {
         }
     }
 
-    // BFS to find shortest path
     string[][string] parent;
     string[][string] parentFile;
     DList!string queue;
@@ -60,7 +58,6 @@ string[] findMigrationPath(string rulesDir, string fromVer, string toVer) {
         queue.removeFront();
 
         if (current == toVer) {
-            // Reconstruct path
             string[] path;
             auto curr = toVer;
             while (curr != fromVer) {

@@ -1,0 +1,5 @@
+name: libequivalence
+version: ~
+title: D Library (libequivalence)
+nav:
+  - modules/ROOT/nav.adoc
