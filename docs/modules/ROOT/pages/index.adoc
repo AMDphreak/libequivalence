@@ -10,7 +10,7 @@ DUB 1.41 and newer require a **commit hash** along with your repository definiti
 .Example `dub.sdl` Configuration
 [source,sdl]
 ----
-dependency "libequivalence" version="ecbc77baa6863517b15b2fcd467aa24b2429386a" repository="git+https://github.com/AMDphreak/libequivalence.git"
+dependency "libequivalence" version="6e1706e6fd2db5e1fcd6b29106d92566af1bff95" repository="git+https://github.com/dev-centr/libequivalence.git"
 ----
 
 Alternatively, once registered on the global registry, you can pull it as a standard package:
@@ -26,6 +26,6 @@ dependency "libequivalence" version="~>1.0.0"
 To make the library consumable as a standard dependency without git links:
 
 1. **Create Registry Account:** Register an account at link:https://code.dlang.org/register[code.dlang.org].
-2. **Register Repository:** Submit the project under your user account (`AMDphreak/libequivalence`).
+2. **Register Repository:** Submit the project under your user account (`dev-centr/libequivalence`).
 3. **Release Tags:** DUB aggregates package versions directly from Git release tags (like `v1.0.0` or `v1.2.3`). When you tag a release, the registry automatically picks it up within 30 minutes.
 4. **Publishing Guidelines:** For detailed publication policies, consult the link:https://dub.pm/dub-guide/publishing/[DUB Publishing Manual].

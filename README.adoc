@@ -1,10 +1,10 @@
 = libequivalence
 
-image:https://github.com/AMDphreak/libequivalence/actions/workflows/ci.yml/badge.svg[Build status,link=https://github.com/AMDphreak/libequivalence/actions/workflows/ci.yml]
+image:https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml/badge.svg[Build status,link=https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml]
 
 After you link:https://code.dlang.org/packages/libequivalence[register the package on code.dlang.org], you can add a registry version badge (for example from link:https://shields.io/badges/dub[Shields.io DUB]) next to the build badge above.
 
-D library: SDL-driven rule loading and application for the link:https://github.com/AMDphreak/equivalence-engine[Equivalence Engine].
+D library: SDL-driven rule loading and application for the link:https://github.com/dev-centr/equivalence-engine[Equivalence Engine].
 
 == Publish on code.dlang.org
 
@@ -24,7 +24,7 @@ DUB 1.41 and newer require a **commit hash** (not only a semver tag) in the `ver
 
 [dub.sdl]
 ----
-dependency "libequivalence" version="ecbc77baa6863517b15b2fcd467aa24b2429386a" repository="git+https://github.com/AMDphreak/libequivalence.git"
+dependency "libequivalence" version="6e1706e6fd2db5e1fcd6b29106d92566af1bff95" repository="git+https://github.com/dev-centr/libequivalence.git"
 ----
 
 Git tags such as `v1.0.0` / `1.0.0` are still useful for human-readable releases; bump the hash in dependents when you tag a new library version.
