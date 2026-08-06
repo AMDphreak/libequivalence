@@ -1,24 +1,41 @@
+ifndef::env-github[:icons: font]
+:toc: preamble
+:toclevels: 2
+:sectanchors:
+
+ifndef::env-github[]
+image:https://img.shields.io/github/contributors/dev-centr/libequivalence.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/libequivalence/graphs/contributors]
+image:https://img.shields.io/github/forks/dev-centr/libequivalence.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/libequivalence/network/members]
+image:https://img.shields.io/github/stars/dev-centr/libequivalence.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/libequivalence/stargazers]
+image:https://img.shields.io/github/issues/dev-centr/libequivalence.svg?style=for-the-badge[Issues,link=https://github.com/dev-centr/libequivalence/issues]
+image:https://img.shields.io/github/license/dev-centr/libequivalence.svg?style=for-the-badge[License,link=https://github.com/dev-centr/libequivalence/blob/main/LICENSE]
+image:https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml/badge.svg[Build status,link=https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml]
+endif::[]
+
+ifdef::env-github[]
+image:https://img.shields.io/github/contributors/dev-centr/libequivalence.svg?style=for-the-badge[Contributors]
+image:https://img.shields.io/github/forks/dev-centr/libequivalence.svg?style=for-the-badge[Forks]
+image:https://img.shields.io/github/stars/dev-centr/libequivalence.svg?style=for-the-badge[Stars]
+image:https://img.shields.io/github/issues/dev-centr/libequivalence.svg?style=for-the-badge[Issues]
+image:https://img.shields.io/github/license/dev-centr/libequivalence.svg?style=for-the-badge[License]
+image:https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml/badge.svg[Build status]
+endif::[]
+
 = libequivalence
 
-image:https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml/badge.svg[Build status,link=https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml]
+D library: rule engine for the Equivalence Engine.
 
-After you link:https://code.dlang.org/packages/libequivalence[register the package on code.dlang.org], you can add a registry version badge (for example from link:https://shields.io/badges/dub[Shields.io DUB]) next to the build badge above.
+link:https://code.dlang.org/packages/libequivalence[code.dlang.org] ·
+link:https://github.com/dev-centr/libequivalence/issues[Report Bug] ·
+link:https://github.com/dev-centr/libequivalence/issues[Request Feature]
 
-D library: SDL-driven rule loading and application for the link:https://github.com/dev-centr/equivalence-engine[Equivalence Engine].
+== About The Project
 
-== Publish on code.dlang.org
+SDL-driven rule loading and application for the link:https://github.com/dev-centr/equivalence-engine[Equivalence Engine].
 
-The registry does not receive uploads from your PC. You **register** the Git repo once; **versions** come from **git tags** (`v1.2.3` style).
+== Installation
 
-. Create an account: link:https://code.dlang.org/register[code.dlang.org/register].
-. Log in and **register** the package with your Git host user/org and repo name (`AMDphreak` + `libequivalence` for this project).
-. Ensure `dub.json` has sensible `description`, `license`, `authors`, and `dependencies` (already required for a clean listing).
-. Cut releases with **annotated or lightweight tags** named like `v1.0.1` (semver). The registry polls Git periodically (about every ~30 minutes) and picks up new tags automatically.
-. After the first successful crawl, the package page will be at `https://code.dlang.org/packages/libequivalence` and dependents can use `dependency "libequivalence" version="~>1.0.0"` (registry) instead of a raw `repository` + commit pin—though you may still pin commits for maximum reproducibility.
-
-Official overview: link:https://dub.pm/dub-guide/publishing/[Publishing packages — DUB documentation].
-
-== Use in DUB
+=== Use in DUB
 
 DUB 1.41 and newer require a **commit hash** (not only a semver tag) in the `version` field when using `repository`. Pin the revision you want (for example the commit that `v1.0.0` points to):
 
@@ -29,6 +46,25 @@ dependency "libequivalence" version="6e1706e6fd2db5e1fcd6b29106d92566af1bff95" r
 
 Git tags such as `v1.0.0` / `1.0.0` are still useful for human-readable releases; bump the hash in dependents when you tag a new library version.
 
+=== Publish on code.dlang.org
+
+The registry does not receive uploads from your PC. You **register** the Git repo once; **versions** come from **git tags** (`v1.2.3` style).
+
+. Create an account: link:https://code.dlang.org/register[code.dlang.org/register].
+. Log in and **register** the package with your Git host user/org and repo name.
+. Ensure `dub.json` has sensible `description`, `license`, `authors`, and `dependencies`.
+. Cut releases with tags named like `v1.0.1` (semver). The registry polls Git periodically (~30 minutes).
+. After the first successful crawl, dependents can use `dependency "libequivalence" version="~>1.0.0"`.
+
+Official overview: link:https://dub.pm/dub-guide/publishing/[Publishing packages — DUB documentation].
+
 == License
 
 Distributed under the Boost Software License 1.0. See link:LICENSE[LICENSE].
+
+== Contact
+
+DevCentr.org — support@devcentr.org
+
+* Project: https://github.com/dev-centr/libequivalence
+* Site: https://devcentr.org
