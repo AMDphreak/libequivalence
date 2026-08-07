@@ -38,6 +38,7 @@ private bool tagBool(Tag t, string name, bool defaultVal) {
 
 /**
  * Load catalog/tools.sdl and resolve install method for toolId + context.
+ * Accepts either a bare `tools { ... }` root or `cliToolsCatalog { tools { ... } }`.
  * Falls back to default/curl-script or npm-global methods marked fallback.
  */
 CliInstallMethod resolveCliInstall(string catalogPath, string context, string toolId, bool preferImmutable = true) {
@@ -46,6 +47,11 @@ CliInstallMethod resolveCliInstall(string catalogPath, string context, string to
 
     Tag root = parseFile(catalogPath);
     Tag toolsTag = root.getTag("tools");
+    if (toolsTag is null) {
+        auto catalog = root.getTag("cliToolsCatalog");
+        if (catalog !is null)
+            toolsTag = catalog.getTag("tools");
+    }
     if (toolsTag is null)
         return CliInstallMethod.init;
 
