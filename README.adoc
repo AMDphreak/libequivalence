@@ -3,7 +3,30 @@ ifndef::env-github[:icons: font]
 :toclevels: 2
 :sectanchors:
 
-[[readme-top]]
+ifdef::env-github[]
+++++
+<a id="readme-top"></a>
+<div align="center">
+<a href="https://github.com/dev-centr/libequivalence/graphs/contributors"><img src="https://img.shields.io/github/contributors/dev-centr/libequivalence.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/dev-centr/libequivalence/network/members"><img src="https://img.shields.io/github/forks/dev-centr/libequivalence.svg?style=for-the-badge" alt="Forks"></a>
+<a href="https://github.com/dev-centr/libequivalence/stargazers"><img src="https://img.shields.io/github/stars/dev-centr/libequivalence.svg?style=for-the-badge" alt="Stars"></a>
+<a href="https://github.com/dev-centr/libequivalence/issues"><img src="https://img.shields.io/github/issues/dev-centr/libequivalence.svg?style=for-the-badge" alt="Issues"></a>
+<a href="https://github.com/dev-centr/libequivalence/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dev-centr/libequivalence.svg?style=for-the-badge" alt="License"></a>
+<a href="https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml"><img src="https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml/badge.svg" alt="Build status"></a>
+<br />
+<h3 align="center">libequivalence</h3>
+<p align="center">
+D library: rule engine for the Equivalence Engine.<br />
+<a href="https://code.dlang.org/packages/libequivalence"><strong>code.dlang.org »</strong></a><br /><br />
+<a href="https://github.com/dev-centr/libequivalence/issues">Report Bug</a>
+&middot;
+<a href="https://github.com/dev-centr/libequivalence/issues">Request Feature</a>
+</p>
+</div>
+++++
+endif::[]
+
+ifndef::env-github[]
 image:https://img.shields.io/github/contributors/dev-centr/libequivalence.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/libequivalence/graphs/contributors]
 image:https://img.shields.io/github/forks/dev-centr/libequivalence.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/libequivalence/network/members]
 image:https://img.shields.io/github/stars/dev-centr/libequivalence.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/libequivalence/stargazers]
@@ -18,6 +41,7 @@ D library: rule engine for the Equivalence Engine.
 link:https://code.dlang.org/packages/libequivalence[code.dlang.org] ·
 link:https://github.com/dev-centr/libequivalence/issues[Report Bug] ·
 link:https://github.com/dev-centr/libequivalence/issues[Request Feature]
+endif::[]
 
 == About The Project
 
