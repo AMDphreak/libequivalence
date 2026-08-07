@@ -3,23 +3,13 @@ ifndef::env-github[:icons: font]
 :toclevels: 2
 :sectanchors:
 
-ifndef::env-github[]
+[[readme-top]]
 image:https://img.shields.io/github/contributors/dev-centr/libequivalence.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/libequivalence/graphs/contributors]
 image:https://img.shields.io/github/forks/dev-centr/libequivalence.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/libequivalence/network/members]
 image:https://img.shields.io/github/stars/dev-centr/libequivalence.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/libequivalence/stargazers]
 image:https://img.shields.io/github/issues/dev-centr/libequivalence.svg?style=for-the-badge[Issues,link=https://github.com/dev-centr/libequivalence/issues]
 image:https://img.shields.io/github/license/dev-centr/libequivalence.svg?style=for-the-badge[License,link=https://github.com/dev-centr/libequivalence/blob/main/LICENSE]
 image:https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml/badge.svg[Build status,link=https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml]
-endif::[]
-
-ifdef::env-github[]
-image:https://img.shields.io/github/contributors/dev-centr/libequivalence.svg?style=for-the-badge[Contributors]
-image:https://img.shields.io/github/forks/dev-centr/libequivalence.svg?style=for-the-badge[Forks]
-image:https://img.shields.io/github/stars/dev-centr/libequivalence.svg?style=for-the-badge[Stars]
-image:https://img.shields.io/github/issues/dev-centr/libequivalence.svg?style=for-the-badge[Issues]
-image:https://img.shields.io/github/license/dev-centr/libequivalence.svg?style=for-the-badge[License]
-image:https://github.com/dev-centr/libequivalence/actions/workflows/ci.yml/badge.svg[Build status]
-endif::[]
 
 = libequivalence
 
@@ -32,6 +22,8 @@ link:https://github.com/dev-centr/libequivalence/issues[Request Feature]
 == About The Project
 
 SDL-driven rule loading and application for the link:https://github.com/dev-centr/equivalence-engine[Equivalence Engine].
+
+link:#readme-top[back to top]
 
 == Installation
 
@@ -58,9 +50,13 @@ The registry does not receive uploads from your PC. You **register** the Git rep
 
 Official overview: link:https://dub.pm/dub-guide/publishing/[Publishing packages — DUB documentation].
 
+link:#readme-top[back to top]
+
 == License
 
 Distributed under the Boost Software License 1.0. See link:LICENSE[LICENSE].
+
+link:#readme-top[back to top]
 
 == Contact
 
@@ -68,3 +64,5 @@ DevCentr.org — support@devcentr.org
 
 * Project: https://github.com/dev-centr/libequivalence
 * Site: https://devcentr.org
+
+link:#readme-top[back to top]
