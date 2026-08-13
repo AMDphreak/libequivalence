@@ -47,6 +47,8 @@ endif::[]
 
 SDL-driven rule loading and application for the link:https://github.com/dev-centr/equivalence-engine[Equivalence Engine].
 
+`equivalence.cli` can **pick one** install method (`resolveCliInstall`) or **list all** methods a host can run (`listCliInstalls`). Filter by OS family, package managers, `format`, and `runtime`. Do not encode a shell in the context path.
+
 link:#readme-top[back to top]
 
 == Installation

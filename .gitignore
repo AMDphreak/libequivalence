@@ -6,3 +6,5 @@ __dummy.html
 *.obj
 *.lst
 *.lib
+*.exe
+*.pdb

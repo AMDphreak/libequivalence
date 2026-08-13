@@ -4,6 +4,7 @@
     "authors": ["dev-centr"],
     "copyright": "Copyright © 2026, dev-centr",
     "license": "BSL-1.0",
+    "targetType": "library",
     "dependencies": {
         "sdlang-d": "~>0.10.6"
     }

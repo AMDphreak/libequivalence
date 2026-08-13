@@ -18,3 +18,6 @@ jobs:
 
       - name: Build (library)
         run: dub build
+
+      - name: Test
+        run: dub test

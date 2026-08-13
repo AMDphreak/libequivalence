@@ -3,6 +3,15 @@
 
 `libequivalence` is the core D programming library that parses SDL-driven adaptation rules and evaluates code-transform pathways. It powers the official CLI compiler, but is also available as a standalone D dependency for custom tool builders.
 
+== CLI install catalog
+
+`equivalence.cli` loads `catalog/tools.sdl`.
+
+* `resolveCliInstall(path, context, toolId)` — pick **one** method (exact context, then parent, then fallback).
+* `listCliInstalls(path, toolId, HostCaps)` — every method this host can run. Filter by `family`, package managers, formats, and `runtime`. Do **not** put a shell in the context path.
+
+A method may carry `format`, `runtime` (`argv` default), `argv`, and `expand` (other intent ids). See `equivalence-rules-cli/docs/SDL-CONVENTIONS.adoc`.
+
 == Adding libequivalence to Your D Project
 
 DUB 1.41 and newer require a **commit hash** along with your repository definition to guarantee clean reproducible builds:
